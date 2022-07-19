@@ -32,61 +32,11 @@ WOOT ;/bin/echo NOPE; ; ;
 YEAH
 $>
 
+
+
 Conseils:
 N'oubliez pas de passer les variables d'environment à execve
 
 Conseils:
 Ne fuitez pas de file descriptor!
-```
-
-# Inspirations
-
-https://github.com/mikysett/42_microshell
-
-# Pseudo code 1
-
-Fonctions utilitaires:
-
-- ft_strlen
-- ft_strdup
-- ft_calloc
-
-Structures:
-
-- cmd
-	- d
-
-
-```
-0/ main:
-	1/ Initialiser les structures
-	1/ Parser
-	2/ Executor
-
-1/ Initializer:
-	1.1/
-
-2/ Parser:
-	2.1/
-
-3/ Executor:
-
-```
-
-# Pseudo code Satcheen
-
-```
-main(argc, argv, envp):
-	dupliquer argv -> cmd
-	remplacer les '|' et ';' par des NULL
-	execute
-	free
-
-execute(cmd, argc, argv, env):
-	tant que argv n'est pas fini:
-		Compter la taille de la commande
-		Si c'est cd
-			lancer cd
-		Sinon
-			Si c'est suivis par un
 ```

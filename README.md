@@ -32,7 +32,10 @@ WOOT ;/bin/echo NOPE; ; ;
 YEAH
 $>
 
-
+$>./microshell /bin/ls ";" ";" ";" ";" ";" /bin/ls
+microshell.c microshell
+microshell.c microshell
+$>
 
 Conseils:
 N'oubliez pas de passer les variables d'environment à execve
